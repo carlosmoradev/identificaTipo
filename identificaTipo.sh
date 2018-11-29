@@ -31,3 +31,4 @@ if test -f $CADENA ;
             echo "La cadena ingresada no existe"
     fi
 fi
+
