@@ -17,5 +17,17 @@
 
 echo "Ingrese la cadena que desea buscar"
 echo
-read cadena
-echo $cadena
+read CADENA
+
+if test -f $CADENA ;
+    then
+        echo "$CADENA es un archivo"
+    else
+
+    if test -d $CADENA;
+        then
+            echo  "$CADENA es un directorio."
+        else
+            echo "La cadena ingresada no existe"
+    fi
+fi
